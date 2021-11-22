@@ -13,5 +13,5 @@ Steps :
   
 The oauth server provided in thr lcmbiar :  
    - Google (for GoogleDrive consumption)  
-   - Azure SAP (can be use for OData consumption)  
+   - Azure SAP (can be use for BOE authentification with OpenID on top of SAP AD)  
    - Snowflake (Snowflake OAuth server to consume Snowflake with Oauth)  
