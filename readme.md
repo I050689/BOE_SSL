@@ -1,5 +1,7 @@
+This repo provide certificats and OAuth servers for ADEPTs
 
-0 - Clone locally or download this repo  
+Steps :
+0 - Clone locally or download this repo in your ADEPT  
 1 - From your local repo launch setTomcatSSL.bat  
 2 - From your local repo import the oauth_servers.lcmbiar  
 3 - Change the restfull CMC value to https://%THE_FQDN_OF_ADEPT%:8443/biprws  
@@ -9,7 +11,7 @@
 5 - Form your client machine use  https://%THE_FQDN_OF_ADEPT%:8443/BOE/BI  
   
   
-The oauth server provided :  
-   - Google  
-   - Azure SAP  
-   - Snowflake  
+The oauth server provided in thr lcmbiar :  
+   - Google (for GoogleDrive consumption)  
+   - Azure SAP (can be use for OData consumption)  
+   - Snowflake (Snowflake OAuth server to consume Snowflake with Oauth)  
