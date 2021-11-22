@@ -60,9 +60,12 @@
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
     <Connector port="8080" protocol="HTTP/1.1" connectionTimeout="20000" relaxedQueryChars="[,]" redirectPort="8443" compression="on" URIEncoding="UTF-8" compressionMinSize="2048" noCompressionUserAgents="gozilla, traviata" compressibleMimeType="application/vnd.sap.cvom+vbo,text/html,text/xml,text/plain,text/css,text/javascript,text/json,application/javascript,application/json"/>
-	
-	<Connector port="8443" protocol="HTTP/1.1" connectionTimeout="20000" SSLEnabled="true" scheme="https" keystoreFile="E:/ADEPT/ssl/adept.c.eu-de-1.cloud.sap.jks" keystorePass="changeit" clientAuth="false" sslProtocol="TLS" redirectPort="8443" />
-	
+
+    <Connector port="8443" protocol="HTTP/1.1" connectionTimeout="20000" SSLEnabled="true" scheme="https" keystoreFile="E:/ADEPT/ssl/adept.c.eu-de-1.cloud.sap.jks" keystorePass="changeit" clientAuth="false" sslProtocol="TLS" redirectPort="8443" />
+    <!--
+    <Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true" maxThreads="150" scheme="https" secure="true" clientAuth="false" sslProtocol="TLS" minSpareThreads="25" maxSpareThreads="75" enableLookups="false" disableUploadTimeout="true" acceptCount="100" debug="0" keystorePass="Password1" keystoreFile="E:/ADEPT/ssl/.keystore"/>
+    -->
+
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
